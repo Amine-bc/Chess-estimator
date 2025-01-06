@@ -45,7 +45,7 @@ int D[8][2] = { {+1,0} , {+1,+1} , {0,+1} , {-1,+1} , {-1,0} , {-1,-1} , {0,-1} 
 
 // evalue avec alpha beta la configuration 'conf' du joueur 'mode' en descendant de 'niv' niveaux
 int minmax_ab( struct config conf, int mode, int niv, int min, int max );
-
+int caseMenaceePar(int mode, int x, int y, struct config conf);
 
 /* Copie la configuration c1 dans c2  */
 void copier( struct config *c1, struct config *c2 ) 
